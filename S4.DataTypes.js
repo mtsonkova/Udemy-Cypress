@@ -3,13 +3,16 @@
 // string -> String object is a wrapper around a string primitive
 // number
 // bigint
-// boolean
+// boolean -> this type does not have default value in JS. If you don't declare value it will be undefined
 // undefined -> utomatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments.
 
 // symbol -> Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. That enables a form of weak encapsulation, or a weak form of information hiding.
 
 // null -> when using the typeof operator, it returns "object".
 
+
+//Reference types 1
+// object
 
 let greeting = 'Hi'; // string
 
@@ -44,3 +47,9 @@ console.log('Reset person with null value:' + person);
 
 typeof person; // first syntax
 typeof(person); // second syntax
+
+//difference between literal, variable and expression
+
+console.log('Hello'); //literal
+let fullName = 'Jane Dow'; // variable
+console.log('Hello' + fullName) //expression
