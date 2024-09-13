@@ -32,3 +32,17 @@ if(text.endsWith('amet')) {
 } else {
     console.log('Text does not match');
 }
+
+
+// Extract substring 
+//substring method
+let substr = text.substring(0, 5); // last index is excluded
+console.log(substr);
+
+// slice method
+let slicedStr = text.slice(0, 13); // last index is excluded
+console.log(slicedStr);
+
+//replace all
+let replacedString = text.replaceAll('o', '&');
+console.log(replacedString);
