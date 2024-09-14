@@ -15,6 +15,7 @@ let reportData = {
     passrate() {
         return (this.totalPass / this.totalTest) * 100;
     },
+    //dynamic properties and values
     runDate: new Date(),
     runner: testRunner,
     macID: machineID ? machineID : 'unknown',
