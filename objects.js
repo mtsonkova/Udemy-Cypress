@@ -66,7 +66,7 @@ let entries = Object.entries(reportData);
 
   let trainee = Object.assign(person, student);
   //console.log(trainee);
-  
+
   //Second way with ...rest operator
 
   let trainee2 = {
@@ -75,3 +75,17 @@ let entries = Object.entries(reportData);
   } 
 
   console.log(trainee2);
+
+
+  //iterate through object keys
+  for(let key of Object.keys(trainee2)) {
+    console.log(`${key} -> ${trainee2[key]}`);
+  }
+
+  for(let key of Object.keys(reportData)) {
+    console.log(`${key} -> ${reportData[key]}`);
+  }
+
+  for(let key of Object.keys(reportData)) {
+    console.log(`${key} -> ${JSON.stringify(reportData[key])}`);
+  }
