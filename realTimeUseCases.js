@@ -51,3 +51,11 @@ async function getAPIPromiseWithAsyncFunction() {
 }
 
 getAPIPromiseWithAsyncFunction();
+
+
+// Function as an object
+function addTwoNum(num1, num2) {
+    return num1 + num2;
+}
+console.log(addTwoNum.length); // returns the number of arguments the function can accept
+console.log(addTwoNum.toString()); // displays function implementation so you can see the source code of the function 
